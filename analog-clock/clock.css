@@ -6,6 +6,9 @@ body{
     font-size: 2rem;
     display: flex;
     flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
     align-items: center;
 }
@@ -15,7 +18,7 @@ body{
     height: 30rem;
     border: 20px solid white;
     border-radius: 50%;
-    margin: 50px auto;
+    margin: 0px auto;
     position: relative;
     padding: 2rem;
     
@@ -25,7 +28,7 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
-    transform: translateY(-px);
+    transform: translateY(-4px);
 }
 
 .hand{
@@ -38,4 +41,26 @@ body{
     transform: rotate(90deg);
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+}
+
+/* .hour-hand{
+    width: 30%;
+    transform-origin: 150% ;
+    left: 85px;
+    top: 42%;
+} */
+
+.digital{
+    color: white;
+    display: flex;
+    gap: 5px;
+}
+
+.time{
+    font-size: 2rem;
+    color: white;
+}
+
+.seconds{
+    font-size: 30px;
 }
